@@ -98,5 +98,6 @@
   {% include '_third-party/bookmark.swig' %}
 {% include '_my/audio.swig' %}
 <script type="text/javascript" src="/js/custom.js"></script>
+  {% include '_third-party/copy-code.swig' %}
 </body>
 </html>
