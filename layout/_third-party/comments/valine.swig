@@ -1,6 +1,6 @@
 {% if theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  {% set valine_uri = '//cdn.jsdelivr.net/npm/valine@1.1.9-beta9/dist/Valine.min.js' %}
+  {% set valine_uri = '//unpkg.com/valine/dist/Valine.min.js' %}
   {% if theme.vendors.valine %}
     {% set valine_uri = theme.vendors.valine %}
   {% endif %}
@@ -20,8 +20,9 @@
         appKey: '{{ theme.valine.appkey }}',
         placeholder: '{{ theme.valine.placeholder }}',
         avatar:'{{ theme.valine.avatar }}',
-        guest_info:guest,
+        meta:guest,
         pageSize:'{{ theme.valine.pageSize }}' || 10,
+        visitor: {{ theme.valine.visitor }}
     });
   </script>
 {% endif %}

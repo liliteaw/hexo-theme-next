@@ -1,4 +1,4 @@
-{% if theme.leancloud_visitors.enable %}
+{% if theme.leancloud_visitors.enable and !theme.valine.visitor %}
 
   {# custom analytics part create by xiamo; edited by LEAFERx #}
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
